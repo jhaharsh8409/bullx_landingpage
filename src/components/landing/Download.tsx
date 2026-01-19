@@ -16,7 +16,7 @@ export default function Download() {
                     Ready to Elevate Your Trading?
                   </h2>
                   <p className="text-base xl:text-lg text-muted-foreground">
-                    Download Trading Journal App today and start making smarter, 
+                    Download BULLX today and start making smarter, 
                     more informed trading decisions.
                   </p>
                 </div>

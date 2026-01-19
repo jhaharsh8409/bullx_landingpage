@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 @md:grid-cols-2 @lg:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
             <div className="space-y-4">
-              <h3 className="text-lg font-bold">Trading Journal App</h3>
+              <h3 className="text-lg font-bold">BULLX</h3>
               <p className="text-sm text-muted-foreground">
                 Your trusted companion for tracking and improving trading performance.
               </p>
@@ -76,7 +76,7 @@ export default function Footer() {
               <h4 className="text-sm font-semibold">Connect</h4>
               <div className="flex gap-4">
                 <a 
-                  href="mailto:contact@tradingjournal.app" 
+                  href="mailto:contact@bullx.app" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="Email"
                 >
@@ -116,7 +116,7 @@ export default function Footer() {
           <Separator className="my-8" />
           
           <div className="flex flex-col @md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© {currentYear} Trading Journal App. All rights reserved.</p>
+            <p>© {currentYear} BULLX. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-primary transition-colors">
                 Privacy Policy

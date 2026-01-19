@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="flex-1 text-center @lg:text-left space-y-6 xl:space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl xl:text-6xl font-bold tracking-tight">
-                  <span className="gradient-text">Trading Journal App</span>
+                  <span className="gradient-text">BULLX</span>
                 </h1>
                 <p className="text-xl xl:text-2xl text-muted-foreground font-medium">
                   Track, Analyze, and Improve Your Trading Performance
