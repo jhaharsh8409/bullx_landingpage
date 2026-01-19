@@ -1,14 +1,46 @@
-# BULLX APK File
+# BULLX APK File Setup
 
-Place your BULLX Android APK file in this directory with the name `bullx.apk`.
+## How to Add Your APK File
 
-The download button on the landing page will serve this file to users.
+### Option 1: Manual Upload (Recommended)
+1. Locate your BULLX APK file on your computer
+2. Rename it to `bullx.apk` (lowercase)
+3. Copy the file to this directory: `/public/downloads/bullx.apk`
+4. The download button will automatically serve this file
 
-## Instructions:
-1. Copy your APK file to this directory: `/public/downloads/bullx.apk`
-2. The file will be accessible at: `https://yourdomain.com/downloads/bullx.apk`
-3. Users clicking "Download APK" will download this file directly
+### Option 2: Using Command Line
+```bash
+# Navigate to the project directory
+cd /workspace/app-91ebbchiytj5/public/downloads/
 
-## File Path:
-- Expected location: `/public/downloads/bullx.apk`
-- Download URL: `/downloads/bullx.apk`
+# Copy your APK file here (replace /path/to/your/file.apk with actual path)
+cp /path/to/your/BULLX.apk ./bullx.apk
+```
+
+### Option 3: Using File Manager
+1. Open your file manager
+2. Navigate to: `app-91ebbchiytj5/public/downloads/`
+3. Drag and drop your APK file into this folder
+4. Rename it to `bullx.apk`
+
+## File Requirements
+- **File name:** `bullx.apk` (must be lowercase)
+- **Location:** `/public/downloads/bullx.apk`
+- **Format:** Android APK file
+- **Access URL:** `https://yourdomain.com/downloads/bullx.apk`
+
+## Verification
+After adding the file, verify it's in the correct location:
+```bash
+ls -lh /workspace/app-91ebbchiytj5/public/downloads/bullx.apk
+```
+
+## Important Notes
+- The file must be named exactly `bullx.apk` (lowercase)
+- The file will be publicly accessible once deployed
+- Users will download this file when clicking "Download APK" button
+- Make sure the APK is signed and ready for distribution
+
+## Current Status
+⚠️ **APK file not yet added** - Please add your APK file to this directory following the instructions above.
+
