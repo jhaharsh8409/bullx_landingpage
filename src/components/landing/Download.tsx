@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Apple, Smartphone } from 'lucide-react';
+import { Smartphone } from 'lucide-react';
 
 export default function Download() {
   return (
@@ -21,25 +21,19 @@ export default function Download() {
                   </p>
                 </div>
                 
-                {/* Download Buttons */}
+                {/* Download Button */}
                 <div className="flex flex-col gap-4 w-full @lg:w-auto min-w-[280px]">
                   <Button 
                     size="lg" 
-                    className="w-full text-base xl:text-lg py-6 xl:py-7"
-                    onClick={() => window.open('https://apps.apple.com', '_blank')}
-                  >
-                    <Apple className="mr-3 h-6 w-6" />
-                    Download for iOS
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    variant="outline"
                     className="w-full text-base xl:text-lg py-6 xl:py-7"
                     onClick={() => window.open('https://play.google.com', '_blank')}
                   >
                     <Smartphone className="mr-3 h-6 w-6" />
                     Download for Android
                   </Button>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Available on Google Play Store
+                  </p>
                 </div>
               </div>
             </div>
