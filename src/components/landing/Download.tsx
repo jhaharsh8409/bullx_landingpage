@@ -5,14 +5,10 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 
 export default function Download() {
   const handleDownloadAPK = () => {
-    // Create a temporary link element to trigger download
-    const link = document.createElement('a');
-    link.href = '/downloads/bullx.apk'; // Path to your APK file
-    link.download = 'BULLX.apk';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  window.location.href =
+    'https://github.com/jhaharsh8409/bull-apk/releases/download/v1.0.0/bullx.apk';
+};
+
 
   return (
     <section id="download" className="py-16 xl:py-24 px-4">
