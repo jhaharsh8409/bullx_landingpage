@@ -1,8 +1,19 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Smartphone } from 'lucide-react';
+import { Smartphone, Download as DownloadIcon, AlertCircle } from 'lucide-react';
+import { Alert, AlertDescription } from '@/components/ui/alert';
 
 export default function Download() {
+  const handleDownloadAPK = () => {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/downloads/bullx.apk'; // Path to your APK file
+    link.download = 'BULLX.apk';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="download" className="py-16 xl:py-24 px-4">
       <div className="container mx-auto max-w-4xl">
@@ -26,17 +37,28 @@ export default function Download() {
                   <Button 
                     size="lg" 
                     className="w-full text-base xl:text-lg py-6 xl:py-7"
-                    onClick={() => window.open('https://play.google.com', '_blank')}
+                    onClick={handleDownloadAPK}
                   >
-                    <Smartphone className="mr-3 h-6 w-6" />
-                    Download for Android
+                    <DownloadIcon className="mr-3 h-6 w-6" />
+                    Download APK
                   </Button>
-                  <p className="text-sm text-muted-foreground text-center">
-                    Available on Google Play Store
-                  </p>
+                  <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                    <Smartphone className="h-4 w-4" />
+                    <span>For Android Devices</span>
+                  </div>
                 </div>
               </div>
             </div>
+            
+            {/* Installation Instructions */}
+            <Alert className="mt-8 bg-muted/50 border-primary/20">
+              <AlertCircle className="h-4 w-4" />
+              <AlertDescription className="text-sm">
+                <strong>Installation Note:</strong> You may need to enable "Install from Unknown Sources" 
+                in your Android settings to install this app. Go to Settings → Security → Unknown Sources 
+                and toggle it on before installing.
+              </AlertDescription>
+            </Alert>
             
             {/* App Preview Images */}
             <div className="mt-12 @container">
