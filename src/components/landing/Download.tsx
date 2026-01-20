@@ -6,7 +6,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 export default function Download() {
   const handleDownloadAPK = () => {
   window.location.href =
-    'https://github.com/jhaharsh8409/bull-apk/releases/download/v1.0.0/bullx.apk';
+    'https://github.com/jhaharsh8409/bull-apk/releases/download/v1.0.0/bull.apk';
 };
 
 
